@@ -5,14 +5,12 @@ print ("Buatlah suatu program untuk menghitung P(N(t) = n), inputkan nilai terle
 lambda_t = int (input("masukkan nilai lambda t         : "))
 m        = int (input("input nilai m                   : "))
 e = 2.71828
+faktorial_b = 1
 print ("\n")
 for b in range (0,m+1):
-    faktorial_b = 1
-    for i in range (1,b+1):
-        faktorial_b *= i
+    faktorial_b *= (b+1)
     n=(e**(-lambda_t)) * ((lambda_t)**b)/faktorial_b 
-    
-    print(f"maka nilai P(N(t) ke -{b} adalah :{n} {m} faktiorial adalah         :{faktorial_b}")
+    print(f"maka nilai P(N(t) ke -{b} adalah :{n} {m} faktiorial adalah:{faktorial_b}")
 
 
 
