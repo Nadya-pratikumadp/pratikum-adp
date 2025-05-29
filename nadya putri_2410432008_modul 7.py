@@ -45,8 +45,6 @@ def tampilkan_tabel(pratikan, rata_rata):
 # Program utama
 
 pratikan = input_data()
-
-# Sorting dengan bubble sort descending berdasarkan nilai_akhir
 n = len(pratikan)
 for i in range(n):
     for j in range(0, n - i - 1):
